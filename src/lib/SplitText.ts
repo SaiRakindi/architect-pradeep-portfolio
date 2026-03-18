@@ -37,12 +37,13 @@ export class SplitText {
         const word = document.createElement("span");
         word.style.display = "inline-block";
         word.style.whiteSpace = "pre";
-        word.textContent = wi < wordsInLine.length - 1 ? wordText + " " : wordText;
+        word.textContent =
+          wi < wordsInLine.length - 1 ? wordText + " " : wordText;
         line.appendChild(word);
         this.words.push(word);
 
         // Chars
-        [...wordText].forEach((char) => {
+        [...wordText.split("")].forEach((char) => {
           const c = document.createElement("span");
           c.style.display = "inline-block";
           c.textContent = char;
