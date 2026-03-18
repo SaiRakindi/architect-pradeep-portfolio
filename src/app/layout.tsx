@@ -2,11 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Aria Solano — Architect",
-  description: "Designing spaces that inspire human experience. Architecture portfolio of Aria Solano — graduate architect specializing in residential, commercial, and urban design.",
-  keywords: ["architect", "architecture", "portfolio", "residential design", "urban planning", "interior design"],
+  title: "Pradeep Mathangi — Architect",
+  description:
+    "Designing spaces that inspire human experience. Architecture portfolio of Pradeep Mathangi — graduate architect specializing in residential, commercial, and urban design.",
+  keywords: [
+    "architect",
+    "architecture",
+    "portfolio",
+    "residential design",
+    "urban planning",
+    "interior design",
+  ],
   openGraph: {
-    title: "Aria Solano — Architect",
+    title: "Pradeep Mathangi — Architect",
     description: "Designing spaces that inspire human experience.",
     type: "website",
   },
@@ -21,11 +29,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
       </head>
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

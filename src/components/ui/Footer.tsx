@@ -33,7 +33,7 @@ export default function Footer() {
           {/* Right */}
           <div className="text-right">
             <p className="font-mono text-xs text-concrete/40 tracking-wider">
-              © {year} Aria Solano. All rights reserved.
+              © {year} Pradeep Mathangi. All rights reserved.
             </p>
             <p className="font-mono text-xs text-concrete/30 mt-1">
               Designed & built with precision.
@@ -45,7 +45,9 @@ export default function Footer() {
         <div className="mt-10 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 bg-green-500/80 rounded-full animate-pulse" />
-            <span className="font-mono text-xs text-concrete/40">Available for projects</span>
+            <span className="font-mono text-xs text-concrete/40">
+              Available for projects
+            </span>
           </div>
           <p className="font-mono text-xs text-concrete/25">
             Built with Next.js · TypeScript · GSAP · Three.js

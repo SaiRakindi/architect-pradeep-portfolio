@@ -1,4 +1,4 @@
-# Aria Solano — Architecture Portfolio
+# Pradeep Mathangi — Architecture Portfolio
 
 A premium, immersive architecture portfolio built with Next.js, TypeScript, GSAP, Three.js, and Tailwind CSS.
 
@@ -48,18 +48,23 @@ npm start
 ## Customisation
 
 ### Change Architect Info
+
 Edit `src/components/about/About.tsx` — update name, bio, and specializations.
 
 ### Update Projects
+
 Edit `src/components/projects/Projects.tsx` — update the `projects` array with real project data and replace SVG visuals with actual images.
 
 ### Replace Portrait
+
 In `About.tsx`, replace the inline SVG with an `<Image>` component pointing to `/public/portrait.jpg`.
 
 ### Update Contact Details
+
 Edit `src/components/contact/Contact.tsx` — update email, phone, and studio location.
 
 ### Color Scheme
+
 Edit `src/app/globals.css` CSS variables and `tailwind.config.ts` to adjust the color palette.
 
 ## Project Structure
