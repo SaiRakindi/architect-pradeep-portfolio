@@ -38,7 +38,9 @@ export default function Navbar() {
     setMenuOpen(false);
     const el = document.querySelector(href);
     if (el) {
-      const win = window as typeof window & { lenis?: { scrollTo: (el: Element, opts: object) => void } };
+      const win = window as typeof window & {
+        lenis?: { scrollTo: (el: Element, opts: object) => void };
+      };
       if (win.lenis) {
         win.lenis.scrollTo(el, { offset: -80, duration: 2 });
       } else {
@@ -59,10 +61,13 @@ export default function Navbar() {
       {/* Logo */}
       <a
         href="#"
-        onClick={(e) => { e.preventDefault(); handleNavClick("#"); }}
+        onClick={(e) => {
+          e.preventDefault();
+          handleNavClick("#");
+        }}
         className="font-display text-xl tracking-wider text-bone hover:text-steel transition-colors"
       >
-        ARIA<span className="text-steel">.</span>SOLANO
+        PRADEEP<span className="text-steel">.</span>MATHANGI
       </a>
 
       {/* Desktop Nav */}
@@ -83,7 +88,10 @@ export default function Navbar() {
       {/* CTA */}
       <a
         href="#contact"
-        onClick={(e) => { e.preventDefault(); handleNavClick("#contact"); }}
+        onClick={(e) => {
+          e.preventDefault();
+          handleNavClick("#contact");
+        }}
         className="hidden md:flex items-center gap-2 border border-steel/50 text-steel text-xs tracking-widest uppercase px-6 py-2.5 hover:bg-steel hover:text-bone transition-all duration-400"
       >
         Hire Me
@@ -95,15 +103,29 @@ export default function Navbar() {
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
       >
-        <span className={`block w-6 h-px bg-bone transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-        <span className={`block w-4 h-px bg-bone transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
-        <span className={`block w-6 h-px bg-bone transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+        <span
+          className={`block w-6 h-px bg-bone transition-all duration-300 ${
+            menuOpen ? "rotate-45 translate-y-2" : ""
+          }`}
+        />
+        <span
+          className={`block w-4 h-px bg-bone transition-all duration-300 ${
+            menuOpen ? "opacity-0" : ""
+          }`}
+        />
+        <span
+          className={`block w-6 h-px bg-bone transition-all duration-300 ${
+            menuOpen ? "-rotate-45 -translate-y-2" : ""
+          }`}
+        />
       </button>
 
       {/* Mobile Menu */}
       <div
         className={`fixed inset-0 bg-obsidian z-40 flex flex-col justify-center items-center gap-10 transition-all duration-700 md:hidden ${
-          menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          menuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
         }`}
       >
         {navLinks.map((link, i) => (
@@ -118,7 +140,10 @@ export default function Navbar() {
         ))}
         <a
           href="#contact"
-          onClick={(e) => { e.preventDefault(); handleNavClick("#contact"); }}
+          onClick={(e) => {
+            e.preventDefault();
+            handleNavClick("#contact");
+          }}
           className="mt-4 border border-steel text-steel text-sm tracking-widest uppercase px-8 py-3"
         >
           Hire Me

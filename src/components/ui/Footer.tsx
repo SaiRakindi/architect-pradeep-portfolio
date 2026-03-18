@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Logo */}
           <div>
             <p className="font-display text-2xl text-bone tracking-wider">
-              ARIA<span className="text-steel">.</span>SOLANO
+              PRADEEP<span className="text-steel">.</span>MATHANGI
             </p>
             <p className="font-mono text-xs text-concrete/50 tracking-wider mt-1">
               Graduate Architect — Vancouver, BC

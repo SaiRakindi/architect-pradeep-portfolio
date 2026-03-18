@@ -13,9 +13,20 @@ const services = [
     subtitle: "Custom Homes & Renovations",
     description:
       "From intimate family homes to ambitious residential compounds — designing spaces that reflect who you are. Every detail considered, every material chosen with intention.",
-    features: ["Custom floor plans", "3D visualizations", "Material selection", "Construction documents"],
+    features: [
+      "Custom floor plans",
+      "3D visualizations",
+      "Material selection",
+      "Construction documents",
+    ],
     icon: (
-      <svg viewBox="0 0 48 48" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1">
+      <svg
+        viewBox="0 0 48 48"
+        className="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1"
+      >
         <path d="M6 20L24 6l18 14v22H30V28H18v14H6V20z" />
         <path d="M18 28h12" opacity="0.4" />
       </svg>
@@ -27,9 +38,20 @@ const services = [
     subtitle: "Offices, Retail & Hospitality",
     description:
       "Architecture that works as hard as your business. Environments designed to enhance productivity, attract customers, and communicate your brand with spatial precision.",
-    features: ["Space programming", "Brand integration", "Code compliance", "Phased delivery"],
+    features: [
+      "Space programming",
+      "Brand integration",
+      "Code compliance",
+      "Phased delivery",
+    ],
     icon: (
-      <svg viewBox="0 0 48 48" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1">
+      <svg
+        viewBox="0 0 48 48"
+        className="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1"
+      >
         <rect x="6" y="8" width="36" height="36" />
         <line x1="6" y1="20" x2="42" y2="20" />
         <line x1="6" y1="32" x2="42" y2="32" />
@@ -44,9 +66,20 @@ const services = [
     subtitle: "Masterplans & District Design",
     description:
       "Shaping the city at multiple scales. From single-block interventions to comprehensive masterplans — creating connected, sustainable neighbourhoods that endure.",
-    features: ["Site analysis", "Zoning strategy", "Public realm design", "Sustainability targets"],
+    features: [
+      "Site analysis",
+      "Zoning strategy",
+      "Public realm design",
+      "Sustainability targets",
+    ],
     icon: (
-      <svg viewBox="0 0 48 48" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1">
+      <svg
+        viewBox="0 0 48 48"
+        className="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1"
+      >
         <rect x="4" y="4" width="16" height="16" />
         <rect x="28" y="4" width="16" height="16" />
         <rect x="4" y="28" width="16" height="16" />
@@ -64,9 +97,20 @@ const services = [
     subtitle: "Atmosphere & Detail",
     description:
       "Interior architecture as experience design. Crafting rooms that feel inevitable — where every surface, light source, and material composition tells a coherent story.",
-    features: ["Space planning", "Material palettes", "Lighting design", "FF&E specification"],
+    features: [
+      "Space planning",
+      "Material palettes",
+      "Lighting design",
+      "FF&E specification",
+    ],
     icon: (
-      <svg viewBox="0 0 48 48" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1">
+      <svg
+        viewBox="0 0 48 48"
+        className="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1"
+      >
         <path d="M4 44V10l20-6 20 6v34" />
         <rect x="14" y="26" width="20" height="18" />
         <line x1="4" y1="10" x2="44" y2="10" opacity="0.4" />
@@ -88,7 +132,10 @@ export default function Services() {
         ".services-title",
         { y: 50, opacity: 0 },
         {
-          y: 0, opacity: 1, duration: 1.2, ease: "power3.out",
+          y: 0,
+          opacity: 1,
+          duration: 1.2,
+          ease: "power3.out",
           scrollTrigger: { trigger: section, start: "top 80%" },
         }
       );
@@ -126,11 +173,15 @@ export default function Services() {
   }, []);
 
   return (
-    <section ref={sectionRef} id="services" className="relative py-32 md:py-48 bg-obsidian overflow-hidden">
+    <section
+      ref={sectionRef}
+      id="services"
+      className="relative py-32 md:py-48 bg-obsidian overflow-hidden"
+    >
       <div className="absolute inset-0 blueprint-bg opacity-20 pointer-events-none" />
 
       {/* Large background text */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 font-display text-[20vw] font-light text-white/2 select-none pointer-events-none leading-none tracking-tighter">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 font-display text-[20vw] font-light text-white/2 select-none pointer-events-none leading-none tracking-tighter opacity-[0.3]">
         WORK
       </div>
 
@@ -138,16 +189,20 @@ export default function Services() {
         {/* Header */}
         <div className="services-title opacity-0 mb-20">
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-xs text-steel tracking-ultra-wide uppercase">05 — Services</span>
+            <span className="font-mono text-xs text-steel tracking-ultra-wide uppercase">
+              05 — Services
+            </span>
             <div className="flex-1 h-px bg-steel/20" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <h2 className="font-display text-4xl md:text-6xl font-light text-bone">
-              What I<br /><span className="italic text-steel">Offer</span>
+              What I<br />
+              <span className="italic text-steel">Offer</span>
             </h2>
             <p className="font-sans text-base text-concrete leading-relaxed self-end">
               Each engagement is a collaboration. I bring rigorous thinking,
-              creative vision, and technical fluency to every project — regardless of scale.
+              creative vision, and technical fluency to every project —
+              regardless of scale.
             </p>
           </div>
         </div>
@@ -155,7 +210,11 @@ export default function Services() {
         {/* Services grid */}
         <div className="services-grid grid grid-cols-1 sm:grid-cols-2 gap-5">
           {services.map((service, index) => (
-            <div key={service.id} className="service-card opacity-0 group cursor-pointer" data-cursor-expand>
+            <div
+              key={service.id}
+              className="service-card opacity-0 group cursor-pointer"
+              data-cursor-expand
+            >
               <div className="card-inner border border-white/8 bg-graphite/20 p-8 md:p-10 h-full hover:border-steel/40 transition-colors duration-500 relative overflow-hidden">
                 {/* Background number */}
                 <span className="absolute top-4 right-6 font-mono text-5xl text-white/4 font-bold select-none">
@@ -180,7 +239,10 @@ export default function Services() {
                 {/* Features */}
                 <ul className="space-y-2 mb-8">
                   {service.features.map((f) => (
-                    <li key={f} className="flex items-center gap-3 font-sans text-sm text-concrete/70">
+                    <li
+                      key={f}
+                      className="flex items-center gap-3 font-sans text-sm text-concrete/70"
+                    >
                       <span className="w-3 h-px bg-steel/50 flex-none" />
                       {f}
                     </li>
@@ -190,15 +252,23 @@ export default function Services() {
                 {/* CTA */}
                 <div className="flex items-center gap-2 text-xs text-steel tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-all duration-400 translate-y-2 group-hover:translate-y-0">
                   <span>Enquire</span>
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <svg
+                    className="w-3 h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
                   </svg>
                 </div>
 
                 {/* Bottom accent line */}
-                <div
-                  className="absolute bottom-0 left-0 right-0 h-px bg-steel scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
-                />
+                <div className="absolute bottom-0 left-0 right-0 h-px bg-steel scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
               </div>
             </div>
           ))}
@@ -206,18 +276,42 @@ export default function Services() {
 
         {/* Process section */}
         <div className="mt-24 pt-16 border-t border-white/8">
-          <p className="font-mono text-xs text-steel tracking-ultra-wide uppercase mb-10">How It Works</p>
+          <p className="font-mono text-xs text-steel tracking-ultra-wide uppercase mb-10">
+            How It Works
+          </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { step: "01", label: "Discovery", desc: "We meet, talk through your vision, site, and budget." },
-              { step: "02", label: "Concept", desc: "Initial ideas presented as sketches and diagrams." },
-              { step: "03", label: "Design", desc: "Developed drawings, models, and material selections." },
-              { step: "04", label: "Delivery", desc: "Construction documents and on-site support." },
+              {
+                step: "01",
+                label: "Discovery",
+                desc: "We meet, talk through your vision, site, and budget.",
+              },
+              {
+                step: "02",
+                label: "Concept",
+                desc: "Initial ideas presented as sketches and diagrams.",
+              },
+              {
+                step: "03",
+                label: "Design",
+                desc: "Developed drawings, models, and material selections.",
+              },
+              {
+                step: "04",
+                label: "Delivery",
+                desc: "Construction documents and on-site support.",
+              },
             ].map((p) => (
               <div key={p.step} className="group">
-                <div className="font-mono text-xs text-steel/40 mb-3">{p.step}</div>
-                <h4 className="font-display text-lg text-bone mb-2 group-hover:text-steel transition-colors duration-300">{p.label}</h4>
-                <p className="font-sans text-xs text-concrete/70 leading-relaxed">{p.desc}</p>
+                <div className="font-mono text-xs text-steel/40 mb-3">
+                  {p.step}
+                </div>
+                <h4 className="font-display text-lg text-bone mb-2 group-hover:text-steel transition-colors duration-300">
+                  {p.label}
+                </h4>
+                <p className="font-sans text-xs text-concrete/70 leading-relaxed">
+                  {p.desc}
+                </p>
               </div>
             ))}
           </div>
